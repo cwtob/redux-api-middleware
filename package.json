@@ -8,7 +8,7 @@
     "clean": "rimraf lib coverage",
     "cover": "babel-node ./node_modules/.bin/babel-istanbul cover test/index.js | tap-spec",
     "lint": "eslint src test",
-    "prepublish": "npm run lint && npm test && npm run clean && npm run build",
+    "prepublish": "npm run lint && npm run clean && npm run build",
     "test": "babel-node test/index.js | tap-spec"
   },
   "repository": "agraboso/redux-api-middleware",
