@@ -7,12 +7,11 @@
     "build": "babel src --out-dir lib",
     "clean": "rimraf lib coverage",
     "cover": "babel-node ./node_modules/.bin/babel-istanbul cover test/index.js | tap-spec",
-    "lint": "eslint src test",
-    "prepublish": "npm run lint && npm run clean && npm run build",
+    "prepublish": "npm run clean && npm run build",
     "test": "babel-node test/index.js | tap-spec"
   },
-  "repository": "agraboso/redux-api-middleware",
-  "homepage": "https://github.com/agraboso/redux-api-middleware",
+  "repository": "cwtob/redux-api-middleware",
+  "homepage": "https://github.com/cwtob/redux-api-middleware",
   "keywords": [
     "redux",
     "api",
